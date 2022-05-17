@@ -103,6 +103,6 @@ public class DeliveryCardTest {
         $("[data-test-id='phone'] input").setValue("7999007887");
         $("[data-test-id='agreement']").click();
         $(byText("Забронировать")).click();
-        $("[data-test-id='phone'] .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +7999788790."));
+        $("[data-test-id='phone'] .input__sub").shouldHave(exactText("Телефон указан неверно. Должно быть 11 цифр, например, +79997887900."));
     }
 }
