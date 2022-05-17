@@ -45,7 +45,7 @@ public class DeliveryCardTest {
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(String.valueOf(planningDate));
         $("[data-test-id='name'] input").setValue("Иванов Иван");
-        $("[data-test-id='phone'] input").setValue("+7999007887");
+        $("[data-test-id='phone'] input").setValue("+79990007887");
         $("[data-test-id='agreement']").click();
         $(byText("Забронировать")).click();
         $("[data-test-id='city'] .input__sub").shouldHave(exactText("Поле обязательно для заполнения"));
@@ -58,7 +58,7 @@ public class DeliveryCardTest {
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(String.valueOf(planningDate));
         $("[data-test-id='name'] input").setValue("Иванов Иван");
-        $("[data-test-id='phone'] input").setValue("+7999007887");
+        $("[data-test-id='phone'] input").setValue("+79990007887");
         $("[data-test-id='agreement']").click();
         $(byText("Забронировать")).click();
         $("[data-test-id='city'] .input__sub").shouldHave(exactText("Доставка в выбранный город недоступна"));
@@ -71,7 +71,7 @@ public class DeliveryCardTest {
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id='date'] input").setValue(String.valueOf(planningDate));;
         $("[data-test-id='name'] input").setValue("Иванов Иван");
-        $("[data-test-id='phone'] input").setValue("+7999007887");
+        $("[data-test-id='phone'] input").setValue("+79990007887");
         $("[data-test-id='agreement']").click();
         $(byText("Забронировать")).click();
         $("[data-test-id='city'] .input__sub").shouldHave(exactText("Доставка в выбранный город недоступна"));
